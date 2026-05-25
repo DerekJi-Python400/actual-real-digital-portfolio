@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ELA Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>ELA Portfolio - Derek Ji</h1>
+
+  <div class="controls">
+    <button onclick="prevSlide()">⬅ Prev</button>
+    <button onclick="nextSlide()">Next ➡</button>
+    <button onclick="togglePresentMode()">🎥 Present Mode</button>
+  </div>
+</div>
+
+<div class="slides-container">
+
+  <!-- Slide 1 -->
+  <section class="slide active">
+
+    <div class="editable draggable title-box">
+      <h1>Welcome / Introduction</h1>
+    </div>
+
+    <div class="editable draggable content-box">
+      <h2>About Me</h2>
+
+      <p>
+        Hello and Welcome! My name is Derek Ji. I am 13 years old, and I am a student in George J. Ryan Middle School who is on their way to the High School for Mathematics, Science, and Engineering.
+      </p>
+
+      <p>
+        I am hardworking, love math, and am curious. I enjoy basketball, volleyball, music, eating, and traveling around the world.
+      </p>
+
+      <p>
+        Overall, from this past year, I realized my participation increased a lot which improved my communication skills.
+      </p>
+    </div>
+
+    <div class="editable draggable funfact">
+      <h2>Fun Facts</h2>
+      <ul>
+        <li>🏐 Favorite sport: Volleyball</li>
+        <li>🎵 Loves music</li>
+        <li>😅 Loves procrastinating homework</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Slide 2 -->
+  <section class="slide">
+
+    <div class="editable draggable title-box">
+      <h1>Reading Comprehension Growth</h1>
+    </div>
+
+    <div class="editable draggable score-box">
+      <h2>Beginning of Year</h2>
+      <ul>
+        <li>Overall Grade Level: Mid 8th Grade</li>
+        <li>Vocabulary: Mid 8th Grade</li>
+        <li>Fiction: 9th Grade</li>
+        <li>Nonfiction: Early 8th Grade</li>
+      </ul>
+    </div>
+
+    <div class="editable draggable score-box">
+      <h2>End of Year</h2>
+      <ul>
+        <li>Overall Grade Level: Mid 8th Grade</li>
+        <li>Vocabulary: Mid 8th Grade</li>
+        <li>Fiction: Late 8th Grade</li>
+        <li>Nonfiction: Mid 8th Grade</li>
+      </ul>
+    </div>
+
+    <div class="editable draggable growth-box">
+      <h1>Growth: +6</h1>
+
+      <p>
+        I improved most in informational comprehension and vocabulary.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Slide 3 -->
+  <section class="slide">
+
+    <div class="editable draggable title-box">
+      <h1>Top 3 Texts</h1>
+    </div>
+
+    <div class="book-card draggable editable">
+      <h2>#1 The Outsiders</h2>
+      <img src="https://prodimage.images-bn.com/pimages/9780142407332_p0_v4_s600x595.jpg">
+      <p>
+        My favorite text because it shows what the real world is like.
+      </p>
+    </div>
+
+    <div class="book-card draggable editable">
+      <h2>#2 The Raven</h2>
+      <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781476759685/the-raven-9781476759685_hr.jpg">
+      <p>
+        Explores grief and human struggles.
+      </p>
+    </div>
+
+    <div class="book-card draggable editable">
+      <h2>#3 100 Days and 99 Nights</h2>
+      <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1344271752i/894604.jpg">
+      <p>
+        Focuses on family life and responsibility.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Slide 4 -->
+  <section class="slide">
+
+    <div class="editable draggable title-box">
+      <h1>Academic Writing Growth</h1>
+    </div>
+
+    <div class="editable draggable content-box large">
+      <p>
+        I feel my writing became stronger because I improved grammar,
+        vocabulary, and relatability.
+      </p>
+
+      <p>
+        My second piece was more engaging and used stronger vocabulary.
+      </p>
+    </div>
+
+    <div class="upload-area draggable">
+      <h2>Insert RACECER Images</h2>
+      <input type="file" class="imageUpload"/>
+      <div class="preview"></div>
+    </div>
+
+  </section>
+
+  <!-- Slide 5 -->
+  <section class="slide">
+
+    <div class="editable draggable title-box">
+      <h1>Creative Growth</h1>
+    </div>
+
+    <div class="editable draggable content-box">
+      <p>
+        My creativity improved because I used more graphics,
+        borders, colors, and artistic designs.
+      </p>
+    </div>
+
+    <div class="upload-area draggable">
+      <h2>Insert Creative Images</h2>
+      <input type="file" class="imageUpload"/>
+      <div class="preview"></div>
+    </div>
+
+  </section>
+
+  <!-- Slide 6 -->
+  <section class="slide">
+
+    <div class="editable draggable title-box">
+      <h1>Character Growth</h1>
+    </div>
+
+    <div class="editable draggable growth-card">
+      <h2>Student Transformation</h2>
+      <p>Non Participating → Participating</p>
+    </div>
+
+    <div class="editable draggable growth-card">
+      <h2>Personal Transformation</h2>
+      <p>Casual → Hardworking</p>
+    </div>
+
+    <div class="editable draggable content-box">
+      <h2>Lessons Learned</h2>
+
+      <p>
+        Focus on reachable goals first, then move onto the next.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Slide 7 -->
+  <section class="slide">
+
+    <div class="editable draggable title-box">
+      <h1>Awards</h1>
+    </div>
+
+    <div class="award draggable editable">
+      🏆 Most Creative
+    </div>
+
+    <div class="award draggable editable">
+      🏆 Best CCV Words
+    </div>
+
+    <div class="award draggable editable">
+      🏆 Most Improved
+    </div>
+
+  </section>
+
+  <!-- Slide 8 -->
+  <section class="slide">
+
+    <div class="editable draggable title-box">
+      <h1>Future Goals</h1>
+    </div>
+
+    <div class="editable draggable goal-box">
+      <h2>High School Goals</h2>
+      <ul>
+        <li>Pass all Regents</li>
+        <li>Take 5 APs</li>
+        <li>Join volleyball team</li>
+      </ul>
+    </div>
+
+    <div class="editable draggable goal-box">
+      <h2>College Goals</h2>
+      <ul>
+        <li>Maintain high GPA</li>
+        <li>Pursue music goals</li>
+      </ul>
+    </div>
+
+    <div class="editable draggable goal-box">
+      <h2>Career Goals</h2>
+      <ul>
+        <li>Join NY Philharmonic</li>
+        <li>Teach at Juilliard</li>
+      </ul>
+    </div>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

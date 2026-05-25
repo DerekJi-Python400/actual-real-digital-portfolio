@@ -1,0 +1,137 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#4facfe,#00f2fe);
+  overflow:hidden;
+  color:white;
+}
+
+.topbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:15px;
+  background:rgba(0,0,0,0.3);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+  backdrop-filter:blur(10px);
+}
+
+.controls button{
+  padding:10px 15px;
+  border:none;
+  border-radius:10px;
+  margin-left:10px;
+  cursor:pointer;
+  background:white;
+  color:black;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.controls button:hover{
+  transform:scale(1.1);
+}
+
+.slides-container{
+  width:100vw;
+  height:100vh;
+  position:relative;
+}
+
+.slide{
+  width:100%;
+  height:100vh;
+  position:absolute;
+  padding:100px 50px;
+  display:none;
+  overflow:hidden;
+  animation:slideIn 0.8s ease;
+}
+
+.slide.active{
+  display:block;
+}
+
+@keyframes slideIn{
+  from{
+    opacity:0;
+    transform:translateX(100px);
+  }
+  to{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+
+.title-box{
+  font-size:2rem;
+  margin-bottom:20px;
+}
+
+.content-box,
+.score-box,
+.growth-box,
+.goal-box,
+.growth-card,
+.book-card,
+.award,
+.funfact,
+.upload-area{
+  background:rgba(255,255,255,0.15);
+  padding:20px;
+  border-radius:20px;
+  backdrop-filter:blur(8px);
+  margin:20px;
+  position:absolute;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.book-card{
+  width:300px;
+}
+
+.book-card img{
+  width:100%;
+  border-radius:10px;
+  margin:10px 0;
+}
+
+.award{
+  font-size:2rem;
+  width:300px;
+  text-align:center;
+}
+
+.editable{
+  cursor:text;
+}
+
+.draggable{
+  cursor:move;
+}
+
+.upload-area{
+  width:350px;
+}
+
+.preview img{
+  width:100%;
+  margin-top:10px;
+  border-radius:10px;
+}
+
+.present-mode .topbar{
+  display:none;
+}
+
+.present-mode .slide{
+  padding-top:40px;
+}
